@@ -7,7 +7,7 @@ const StyledLogo = styled.img`
 `
 
 const Logo = () => {
-  return <StyledLogo src={logo} className="logo" alt="logo" />
+  return <StyledLogo src={logo} alt="logo" />
 }
 
 export default Logo
