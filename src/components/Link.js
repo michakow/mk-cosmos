@@ -1,9 +1,9 @@
-import { useState } from 'react';
+import { useState } from 'react'
 import styled from 'styled-components'
-import capsule from '../images/linkCapsule.svg';
-import crew from '../images/linkCrew.svg';
-import rocket from '../images/linkRocket.svg';
-import starlink from '../images/linkStarlink.svg';
+import capsule from '../images/linkCapsule.svg'
+import crew from '../images/linkCrew.svg'
+import rocket from '../images/linkRocket.svg'
+import starlink from '../images/linkStarlink.svg'
 
 const StyledLink = styled.div`
   position: relative;

@@ -1,12 +1,15 @@
 import styled from 'styled-components'
-import Links from './Links';
+import Links from './Links'
 import Animation from './Animation'
+// import Modal from './Modal'
 
 const StyledWrapper = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  padding: 32px 235px 0 260px;
   width: 100vw;
-  height: 100vh;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 `
 
@@ -24,6 +27,7 @@ const Wrapper = () => {
     <StyledWrapper>
       <StyledLinks />
       <StyledAnimation />
+      {/* <Modal /> */}
     </StyledWrapper>
   )
 }

@@ -1,12 +1,10 @@
-import React from 'react'
 import styled from 'styled-components'
 import Link from './Link'
 
 const StyledLinks = styled.div`
   display: flex;
   width: 350px;
-  height: 448px;
-  margin-left: 260px;
+  min-height: 448px;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;

@@ -1,12 +1,12 @@
-import styled, { keyframes } from 'styled-components'
-import rocket from '../images/Rocket.png';
-import smokeL from '../images/Smoke2.png';
-import smokeR from '../images/Smoke1.png';
-import platform from '../images/landingGear.png';
-import planet from '../images/Planet.png';
+import styled from 'styled-components'
+import rocket from '../images/Rocket.png'
+import smokeL from '../images/Smoke2.png'
+import smokeR from '../images/Smoke1.png'
+import platform from '../images/landingGear.png'
+import planet from '../images/Planet.png'
 
 const StyledContainer = styled.div`
-  margin-right: 235px;
+
 `
 
 const StyledIlustration = styled.div`
@@ -24,33 +24,6 @@ const StyledPlanet = styled.img`
   z-index: 1;
 `
 
-const RocketPath = keyframes`
-  0% {
-    transform: translateX(-50%) rotate(0deg);
-  }
-  20% {
-    transform: translateX(-50%) rotate(90deg);
-  }
-  40% {
-    transform: translateX(200px) rotate(90deg);
-  }
-  50% {
-    transform: translateX(calc(-50% + 444px)) rotate(90deg);
-  }
-  65% {
-    transform: translate(600px, 50x) rotate(135deg);
-  }
-  70% {
-    transform: translate(650px, 200px) rotate(180deg);
-  }
-  80% {
-    transform: translate(650px, 500px) rotate(180deg);
-  }
-  100% {
-    transform: translateX(-50%) rotate(370deg);
-  }
-`
-
 const StyledRocket = styled.img`
   position: absolute;
   top: 0;
@@ -58,10 +31,6 @@ const StyledRocket = styled.img`
   width: 102px;
   height: 140px;
   transform: translateX(-50%);
-  /* animation-name: ${RocketPath};
-  animation-duration: 5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite; */
   z-index: 3;
 `
 

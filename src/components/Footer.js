@@ -2,10 +2,7 @@ import styled, { css } from 'styled-components'
 
 const StyledFooter = styled.footer`
   display: flex;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  flex-wrap: wrap;
 `
 
 const StyledParagraph = styled.p`
