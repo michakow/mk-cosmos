@@ -6,7 +6,6 @@ const StyledLinks = styled.div`
   display: flex;
   width: 350px;
   height: 448px;
-  margin-top: 100px;
   margin-left: 260px;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -16,9 +15,9 @@ const StyledLinks = styled.div`
 const Links = () => {
   return (
     <StyledLinks>
-      <Link type="capsules" />
+      <Link type="capsule" />
       <Link type="crew" />
-      <Link type="rockets" />
+      <Link type="rocket" />
       <Link type="starlink" />
     </StyledLinks>
   )

@@ -5,6 +5,10 @@ import smokeR from '../images/Smoke1.png';
 import platform from '../images/landingGear.png';
 import planet from '../images/Planet.png';
 
+const StyledContainer = styled.div`
+  margin-right: 235px;
+`
+
 const StyledIlustration = styled.div`
   position: relative;
   width: 375px;
@@ -90,6 +94,8 @@ const StyledSmokeR = styled.img`
 `
 
 const StyledButton = styled.button`
+  display: block;
+  margin: 24px auto 68px auto;
   padding: 12px 32px;
   font-size: 16px;
   font-family: 'Inter', sans-serif;
@@ -103,16 +109,16 @@ const StyledButton = styled.button`
 
 const Animation = () => {
   return (
-    <>
+    <StyledContainer>
       <StyledIlustration>
-        <StyledRocket src={rocket} />
-        <StyledPlatform src={platform} />
-        <StyledSmokeL src={smokeL} />
-        <StyledSmokeR src={smokeR} />
-        <StyledPlanet src={planet} />
+        <StyledRocket src={rocket} alt='rocket' />
+        <StyledPlatform src={platform} alt='rocket platform' />
+        <StyledSmokeL src={smokeL} alt='left smoke' />
+        <StyledSmokeR src={smokeR} alt='right smoke' />
+        <StyledPlanet src={planet} alt='planet' />
       </StyledIlustration>
       <StyledButton>Launch Rocket!</StyledButton>
-    </>
+    </StyledContainer>
   )
 }
 

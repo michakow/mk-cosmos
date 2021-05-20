@@ -1,17 +1,17 @@
 import './App.css';
-import Links from './components/Links';
+// import Links from './components/Links';
 import Logo from './components/Logo';
-import Animation from './components/Animation';
+// import Animation from './components/Animation';
 import Footer from './components/Footer';
+import Wrapper from './components/Wrapper';
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Logo />
-      <Links />
-      <Animation />
+      <Wrapper />
       <Footer />
-    </div>
+    </>
   );
 }
 

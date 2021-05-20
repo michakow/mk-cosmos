@@ -3,7 +3,9 @@ import styled from 'styled-components'
 
 const StyledLogo = styled.img`
   display: block;
-  margin: 36px 0 0 165px;
+  position: absolute;
+  top: 36px;
+  left: 165px;
 `
 
 const Logo = () => {

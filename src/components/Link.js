@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import styled from 'styled-components'
-import capsules from '../images/linkCapsules.png';
-import crew from '../images/linkCrew.png';
-import rockets from '../images/linkRockets.png';
-import starlink from '../images/linkStarlink.png';
+import capsule from '../images/linkCapsule.svg';
+import crew from '../images/linkCrew.svg';
+import rocket from '../images/linkRocket.svg';
+import starlink from '../images/linkStarlink.svg';
 
 const StyledLink = styled.div`
   position: relative;
@@ -61,22 +61,27 @@ const StyledParagraph = styled.p`
 
 const Link = ({ type }) => {
   const [hover, setHover] = useState(false)
-  let img;
+  let img
+  let alt
   switch (type) {
-    case 'capsules':
-      img = capsules;
-      break;
+    case 'capsule':
+      img = capsule
+      alt = 'capsule'
+      break
     case 'crew':
-      img = crew;
+      img = crew
+      alt = 'crew'
       break;
-    case 'rockets':
-      img = rockets;
-      break;
+    case 'rocket':
+      img = rocket
+      alt = 'rocket'
+      break
     case 'starlink':
-      img = starlink;
-      break;
+      img = starlink
+      alt = 'starlink'
+      break
     default:
-      break;
+      break
   }
 
   return (
@@ -84,7 +89,7 @@ const Link = ({ type }) => {
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
-      <StyledImage src={img} alt="capsules" />
+      <StyledImage src={img} alt={alt} />
       <StyledGradient />
       <StyledParagraph>{!hover ? type : 'Details'}</StyledParagraph>
     </StyledLink>
