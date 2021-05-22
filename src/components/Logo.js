@@ -8,6 +8,8 @@ const StyledHeader = styled.header`
 const StyledLogo = styled.img`
   display: block;
   position: relative;
+  width: 116px;
+  height: 24px;
 `
 
 const Logo = () => {
