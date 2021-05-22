@@ -1,4 +1,3 @@
-import './App.css';
 import Logo from './components/Logo'
 import Footer from './components/Footer'
 import Wrapper from './components/Wrapper'
