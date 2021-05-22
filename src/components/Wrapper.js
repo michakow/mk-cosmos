@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import Links from './Links'
 import Animation from './Animation'
-// import Modal from './Modal'
 
 const StyledWrapper = styled.div`
   display: flex;
@@ -27,7 +26,6 @@ const Wrapper = () => {
     <StyledWrapper>
       <StyledLinks />
       <StyledAnimation />
-      {/* <Modal /> */}
     </StyledWrapper>
   )
 }

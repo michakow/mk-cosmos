@@ -57,14 +57,16 @@ const StyledParagraph = styled.p`
   text-transform: capitalize;
   text-align: center;
   color: #ffffff;
+  transition: .1s;
 `
 
-const Link = ({ type }) => {
+const Link = ({ type, onShowModal, onSetType }) => {
   const [hover, setHover] = useState(false)
+
   let img
   let alt
   switch (type) {
-    case 'capsule':
+    case 'capsules':
       img = capsule
       alt = 'capsule'
       break
@@ -72,7 +74,7 @@ const Link = ({ type }) => {
       img = crew
       alt = 'crew'
       break;
-    case 'rocket':
+    case 'rockets':
       img = rocket
       alt = 'rocket'
       break
@@ -84,15 +86,23 @@ const Link = ({ type }) => {
       break
   }
 
+  const setModal = (type) => {
+    onShowModal()
+    onSetType(type)
+  }
+
   return (
-    <StyledLink
-      onMouseEnter={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}
-    >
-      <StyledImage src={img} alt={alt} />
-      <StyledGradient />
-      <StyledParagraph>{!hover ? type : 'Details'}</StyledParagraph>
-    </StyledLink>
+    <>
+      <StyledLink
+        onMouseEnter={() => setHover(true)}
+        onMouseLeave={() => setHover(false)}
+        onClick={() => setModal(type)}
+      >
+        <StyledImage src={img} alt={alt} />
+        <StyledGradient />
+        <StyledParagraph>{!hover ? type : 'Details'}</StyledParagraph>
+      </StyledLink>
+    </>
   )
 }
 

@@ -1,5 +1,7 @@
+import { useState } from 'react'
 import styled from 'styled-components'
 import Link from './Link'
+import Modal from './Modal'
 
 const StyledLinks = styled.div`
   display: flex;
@@ -11,13 +13,31 @@ const StyledLinks = styled.div`
 `
 
 const Links = () => {
+  const [showModal, setShowModal] = useState(false)
+  const [modalType, setModalType] = useState('')
+
+  const showModalBox = () => {
+    setShowModal(true)
+  }
+
+  const closeModalBox = () => {
+    setShowModal(false)
+  }
+
+  const setType = (type) => {
+    setModalType(type)
+  }
+
   return (
-    <StyledLinks>
-      <Link type="capsule" />
-      <Link type="crew" />
-      <Link type="rocket" />
-      <Link type="starlink" />
-    </StyledLinks>
+    <>
+      <StyledLinks>
+        <Link type="capsules" onShowModal={showModalBox} onSetType={setType} />
+        <Link type="crew" onShowModal={showModalBox} onSetType={setType} />
+        <Link type="rockets" onShowModal={showModalBox} onSetType={setType} />
+        <Link type="starlink" onShowModal={showModalBox} onSetType={setType} />
+      </StyledLinks>
+      {showModal && <Modal type={modalType} onCloseModal={closeModalBox} />}
+    </>
   )
 }
 
