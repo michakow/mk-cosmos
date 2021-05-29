@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/mk-cosmos/static/js/main.10bec85d.chunk.js",
-    "main.js.map": "/mk-cosmos/static/js/main.10bec85d.chunk.js.map",
+    "main.js": "/mk-cosmos/static/js/main.8a230c03.chunk.js",
+    "main.js.map": "/mk-cosmos/static/js/main.8a230c03.chunk.js.map",
     "runtime-main.js": "/mk-cosmos/static/js/runtime-main.ba69ecf0.js",
     "runtime-main.js.map": "/mk-cosmos/static/js/runtime-main.ba69ecf0.js.map",
     "static/js/2.b98246a1.chunk.js": "/mk-cosmos/static/js/2.b98246a1.chunk.js",
@@ -10,17 +10,17 @@
     "static/js/3.c0175ac0.chunk.js.map": "/mk-cosmos/static/js/3.c0175ac0.chunk.js.map",
     "index.html": "/mk-cosmos/index.html",
     "static/js/2.b98246a1.chunk.js.LICENSE.txt": "/mk-cosmos/static/js/2.b98246a1.chunk.js.LICENSE.txt",
-    "static/media/Planet.1e0f88ec.png": "/mk-cosmos/static/media/Planet.1e0f88ec.png",
-    "static/media/close.5df3986e.svg": "/mk-cosmos/static/media/close.5df3986e.svg",
-    "static/media/explosion.bd70fe96.png": "/mk-cosmos/static/media/explosion.bd70fe96.png",
-    "static/media/linkCapsule.70d7f74e.svg": "/mk-cosmos/static/media/linkCapsule.70d7f74e.svg",
-    "static/media/linkCrew.3755e6a5.svg": "/mk-cosmos/static/media/linkCrew.3755e6a5.svg",
-    "static/media/linkRocket.24649eeb.svg": "/mk-cosmos/static/media/linkRocket.24649eeb.svg",
-    "static/media/linkStarlink.75f21274.svg": "/mk-cosmos/static/media/linkStarlink.75f21274.svg"
+    "static/media/explosion.82adcbfb.png": "/mk-cosmos/static/media/explosion.82adcbfb.png",
+    "static/media/iconClose.1e4b9463.svg": "/mk-cosmos/static/media/iconClose.1e4b9463.svg",
+    "static/media/linkCapsule.4708ad3f.png": "/mk-cosmos/static/media/linkCapsule.4708ad3f.png",
+    "static/media/linkCrew.4b8a8f4a.png": "/mk-cosmos/static/media/linkCrew.4b8a8f4a.png",
+    "static/media/linkRocket.d650114d.png": "/mk-cosmos/static/media/linkRocket.d650114d.png",
+    "static/media/linkStarlink.77fb7c4d.png": "/mk-cosmos/static/media/linkStarlink.77fb7c4d.png",
+    "static/media/planet.0bb58296.png": "/mk-cosmos/static/media/planet.0bb58296.png"
   },
   "entrypoints": [
     "static/js/runtime-main.ba69ecf0.js",
     "static/js/2.b98246a1.chunk.js",
-    "static/js/main.10bec85d.chunk.js"
+    "static/js/main.8a230c03.chunk.js"
   ]
 }
