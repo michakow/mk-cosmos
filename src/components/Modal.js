@@ -2,7 +2,7 @@ import { useData } from './useData'
 import styled from 'styled-components'
 import ModalLoader from './ModalLoader'
 import ModalResult from './ModalResult'
-import closeIcon from '../images/close.svg'
+import closeIcon from '../assets/iconClose.svg'
 import ModalError from './ModalError'
 
 const StyledModal = styled.div`

@@ -1,10 +1,10 @@
 import styled, { css, keyframes } from 'styled-components'
-import rocket from '../images/Rocket.png'
-import smokeL from '../images/Smoke2.png'
-import smokeR from '../images/Smoke1.png'
-import platform from '../images/landingGear.png'
-import planet from '../images/Planet.png'
-import explosion from '../images/explosion.png'
+import rocket from '../assets/rocket.png'
+import smokeL from '../assets/smokeLeft.png'
+import smokeR from '../assets/smokeRight.png'
+import platform from '../assets/landingGear.png'
+import planet from '../assets/planet.png'
+import explosion from '../assets/explosion.png'
 import { useState } from 'react'
 
 const StyledContainer = styled.div`
